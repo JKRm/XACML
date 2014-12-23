@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="XACML_Project_Server"
+  id="myeclipse.1363917301828"
+  context-root="/XACML_Project_Server"
+  j2ee-spec="6.0"
+  archive="XACML_Project_Server.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

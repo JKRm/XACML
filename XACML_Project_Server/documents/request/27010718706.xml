@@ -1,0 +1,11 @@
+<Request>
+<Subject SubjectCategory="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject">
+<Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:subject:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string"><AttributeValue>rootgroup</AttributeValue></Attribute>
+</Subject>
+<Resource>
+<Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#anyURI"><AttributeValue>http://AmazonS3.com</AttributeValue></Attribute>
+</Resource>
+<Action>
+<Attribute AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string"><AttributeValue>list</AttributeValue></Attribute>
+</Action>
+</Request>

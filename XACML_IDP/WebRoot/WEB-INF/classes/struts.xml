@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="adminAction" extends="struts-default" namespace="/admin">	
+		<action name="loginAction" class="org.cas.iie.idp.action.LoginAction" method="execute">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="ssoAction" class="org.cas.iie.idp.action.SsoAction" method="islogin">
+			 <result name="success" type="redirectAction">
+				<param name="actionName">loginAction</param>
+				<param name="namespace">/admin</param>
+			</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="adminLoginAction" class="org.cas.iie.idp.action.AdminAction" method="adminLogin">
+			<result name="success">/list.jsp</result>
+		</action>
+		
+		<action name="groupAction" class="org.cas.iie.idp.action.AdminAction" method="groupModify">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="userAction" class="org.cas.iie.idp.action.AdminAction" method="UserMotify">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+</package>
+
+</struts>    

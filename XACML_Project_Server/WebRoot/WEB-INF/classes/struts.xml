@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="testaction" extends="struts-default" namespace="/test">
+		<action name="testAction" class="org.cas.iie.xp.action.TestAction">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+	
+	<package name="groupaction" extends="struts-default" namespace="/group">
+		<action name="getGroupList" class="org.cas.iie.xp.action.GroupAction" method="getGroupList">
+			<result name="success">/Mygroup.jsp</result>
+		</action>
+		<action name="addAction" class="org.cas.iie.xp.action.GroupAction" method="addGroup">
+			<result name="success" type="redirectAction">
+				<param name="actionName">getGroupList</param>
+				<param name="namespace">/group</param>
+			</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="delAction" class="org.cas.iie.xp.action.GroupAction" method="deleteGroup">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		<action name="getGroup4p" class="org.cas.iie.xp.action.GroupAction" method="getGroupList4p">
+			<result name="success">/deletePolicy.jsp</result>
+			<result name="change">/changePolicy.jsp</result>
+		</action>
+		<action name="getPolicies" class="org.cas.iie.xp.action.GroupAction" method="getPolicies">
+			<result name="success" type="redirectAction">
+				<param name="actionName">getGroup4p</param>
+				<param name="namespace">/group</param>
+			</result>
+		</action>
+		<action name="delPolicyAction" class="org.cas.iie.xp.action.GroupAction" method="deletePolicy">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		<action name="changePolicy" class="org.cas.iie.xp.action.GroupAction" method="changePolicy">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		<action name="isAdmin" class="org.cas.iie.xp.action.GroupAction" method="userLogin">
+			<result name="success">/MainPage.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="adminOutAction" class="org.cas.iie.xp.action.GroupAction" method="adminOut">
+			<result name="success">/login.jsp</result>
+		</action>
+	</package>
+</struts>    

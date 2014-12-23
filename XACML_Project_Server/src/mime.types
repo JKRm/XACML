@@ -1,0 +1,34 @@
+  # This file controls what Internet media types are sent to the client for
+            # given file extension(s).  Sending the correct media type to the client
+            # is important so they know how to handle the content of the file.
+            # Extra types can either be added here or by using an AddType directive
+            # in your config files. For more information about Internet media types,
+            # please read RFC 2045, 2046, 2047, 2048, and 2077.  The Internet media type
+            # registry is at <http://www.iana.org/assignments/media-types/>.
+            # MIME type                     Extensions
+            application/atom+xml            atom
+            application/mathematica
+            application/mathml+xml          mathml
+            application/msword              doc
+            application/octet-stream        bin dms lha lzh exe class so dll dmg
+            application/postscript          ai eps ps
+            application/rdf+xml             rdf
+            application/reginfo+xml
+            application/xhtml+xml           xhtml xht
+            application/xslt+xml            xslt
+            application/xml                 xml xsl
+            application/xml-dtd             dtd
+            application/xml-external-parsed-entity
+            application/zip                 zip
+            audio/mpeg                      mpga mp2 mp3
+            image/jpeg                      jpeg jpg jpe
+            image/naplps
+            image/png                       png
+            image/svg+xml                   svg
+            image/tiff                      tiff tif
+            text/html                       html htm
+            text/plain                      asc txt
+            text/sgml                       sgml sgm
+            text/xml
+            text/xml-external-parsed-entity
+            video/mpeg                      mpeg mpg mpe

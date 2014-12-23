@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="C:/temp"/>
+	<constant name="struts.multipart.maxSize" value="300000000"/>
+	<package name="s3Action" extends="struts-default" namespace="/s3">
+		<action name="getObjectListAction" class="org.cas.iie.xp.action.S3StorageAction" method="getObjectList">
+			<result name="success">/S3Object.jsp</result>
+		</action>
+		
+		<action name="deleteObjectAction" class="org.cas.iie.xp.action.S3StorageAction" method="deleteObject">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="renameObjectAction" class="org.cas.iie.xp.action.S3StorageAction" method="renameObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="moveObjectAction" class="org.cas.iie.xp.action.S3StorageAction" method="moveObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="copyObjectAction" class="org.cas.iie.xp.action.S3StorageAction" method="copyObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="addBucketAction" class="org.cas.iie.xp.action.S3StorageAction" method="addBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="delBucketAction" class="org.cas.iie.xp.action.S3StorageAction" method="deleteBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="GetS3" class="org.cas.iie.xp.action.S3StorageAction" method="getS3file">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="uploadObjectAction" class="org.cas.iie.xp.action.S3StorageAction" method="uploadObject">
+			 <result name="success" type="redirectAction">
+				<param name="actionName">getObjectListAction</param>
+				<param name="namespace">/s3</param>
+			</result>
+			<result name="deny">/deny.jsp</result>
+			<result name="exist">/exist.jsp</result>
+		</action>
+		
+		<action name="getPremAction" class="org.cas.iie.xp.action.S3StorageAction" method="getListPerm">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+	</package>
+	
+	<package name="localAction" extends="struts-default" namespace="/local">
+		<action name="getObjectListAction" class="org.cas.iie.xp.action.LocalStorageAction" method="getObjectList">
+			<result name="success">/LocalObject.jsp</result>
+		</action>
+		
+		<action name="deleteObjectAction" class="org.cas.iie.xp.action.LocalStorageAction" method="deleteObject">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="renameObjectAction" class="org.cas.iie.xp.action.LocalStorageAction" method="renameObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="moveObjectAction" class="org.cas.iie.xp.action.LocalStorageAction" method="moveObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="copyObjectAction" class="org.cas.iie.xp.action.LocalStorageAction" method="copyObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="addBucketAction" class="org.cas.iie.xp.action.LocalStorageAction" method="addBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="delBucketAction" class="org.cas.iie.xp.action.LocalStorageAction" method="deleteBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="getPremAction" class="org.cas.iie.xp.action.LocalStorageAction" method="getListPerm">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="uploadObjectAction" class="org.cas.iie.xp.action.LocalStorageAction" method="uploadObject">
+			 <result name="success" type="redirectAction">
+				<param name="actionName">getObjectListAction</param>
+				<param name="namespace">/local</param>
+			</result>
+			<result name="deny">/deny.jsp</result>
+			<result name="exist">/exist.jsp</result>
+		</action>
+		
+		<action name="previewAction" class="org.cas.iie.xp.action.LocalStorageAction" method="preview">
+			 <result name="success">/previewVideo.jsp</result>
+		</action>
+		
+		<action name="GetLo" class="org.cas.iie.xp.action.LocalStorageAction" method="getDownloadPerm">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+	</package>
+	
+	
+	<package name="gsAction" extends="struts-default" namespace="/gs">
+		<action name="getObjectListAction" class="org.cas.iie.xp.action.GSStorageAction" method="getObjectList">
+			<result name="success">/S3Object.jsp</result>
+		</action>
+		
+		<action name="deleteObjectAction" class="org.cas.iie.xp.action.GSStorageAction" method="deleteObject">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="renameObjectAction" class="org.cas.iie.xp.action.GSStorageAction" method="renameObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="moveObjectAction" class="org.cas.iie.xp.action.GSStorageAction" method="moveObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="copyObjectAction" class="org.cas.iie.xp.action.GSStorageAction" method="copyObject">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="addBucketAction" class="org.cas.iie.xp.action.GSStorageAction" method="addBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="delBucketAction" class="org.cas.iie.xp.action.GSStorageAction" method="deleteBucket">
+			 <result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+	</package>
+	
+	<package name="bucket" extends="struts-default" namespace="/bucket">
+		<action name="bucketListAction" class="org.cas.iie.xp.action.BucketAction" method="execute">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="getBuckets" class="org.cas.iie.xp.action.BucketAction" method="getBucketList">
+			<result name="local">/LocalBuckets.jsp</result>
+			<result name="amazon">/S3Buckets.jsp</result>
+			<result name="google">/GsBuckets.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		
+		<action name="movSL" class="org.cas.iie.xp.action.BucketAction" method="mvS32Local">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="movLS" class="org.cas.iie.xp.action.BucketAction" method="mvLocal2S3">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="cpSL" class="org.cas.iie.xp.action.BucketAction" method="cpS32Local">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+		
+		<action name="cpLS" class="org.cas.iie.xp.action.BucketAction" method="cpLocal2S3">
+			<result type="stream">
+        		<param name="contentType">text/html</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+		</action>
+	
+	</package>
+	
+	<package name="testaction" extends="struts-default" namespace="/test">
+		<action name="testAction" class="org.cas.iie.xp.action.TestAction">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+	
+	<package name="accessAction" extends="struts-default" namespace="/access">
+		<action name="accessAction" class="org.cas.iie.xp.action.AccessAction">
+			<result name="success">/MainPage.jsp</result>
+			<result name="error" type="redirectAction">
+				<param name="actionName">spAction</param>
+				<param name="namespace">/access</param>
+			</result>
+		</action>
+		<action name="spAction" class="org.cas.iie.xp.action.ServerPartyAction">
+		</action>
+		<action name="logoutAction" class="org.cas.iie.xp.action.AccessAction" method="logOut">
+			<result name="success" type="redirectAction">
+				<param name="actionName">accessAction</param>
+				<param name="namespace">/access</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>    

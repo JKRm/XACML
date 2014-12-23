@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.struts2.MYECLIPSE_STRUTS21_CORE"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_CORE"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_AOP"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_JDBC"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_CORE"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_WEB"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.struts2.MYECLIPSE_STRUTS21_SPRING"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/CXF2.4"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.15-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/samples.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/sunxacml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/cockpit-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/cockpitlite-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/jets3t-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/jets3t-gui-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/synchronize-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/uploader-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/BareBonesBrowserLaunch.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/bcprov-jdk14-138.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/httpclient-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/httpcore-4.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/jackson-core-asl-1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/jackson-mapper-asl-1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/java-xmlbuilder-0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/jug-asl-2.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Workspaces/MyEclipse for Spring 9/XACMLPro/XACML_Project_Server/WebRoot/WEB-INF/lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

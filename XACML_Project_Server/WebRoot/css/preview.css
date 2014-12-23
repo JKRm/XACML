@@ -1,0 +1,345 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+.b1,.b2,.b3,.b4,.b1b,.b2b,.b3b,.b4b,.b{display:block;overflow:hidden;}
+.b1,.b2,.b3,.b1b,.b2b,.b3b{height:1px;}
+.b2,.b3,.b4,.b2b,.b3b,.b4b,.b{border-left:1px solid #999;border-right:1px solid #999;}
+.b1,.b1b{margin:0 5px;background:#999;}
+.b2,.b2b{margin:0 3px;border-width:2px;}
+.b3,.b3b{margin:0 2px;}
+.b4,.b4b{height:2px;margin:0 1px;}
+.d1{background:#F7F8F9;}
+.k {height:130px;}
+img {
+	border: 0;
+}
+body {
+	background: white;
+}
+#main {
+	margin-top: 20px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main #head ul {
+	list-style-type: none;
+}
+#main #head li {
+	display: inline;
+	font-family: "Ó×Ô²";
+	margin-left: 8px;
+}
+#audiolist #head li {
+	display: inline;
+	font-family: "Ó×Ô²";
+	margin-left: 8px;
+}
+#main #head #title li a {
+	text-decoration: none;
+}
+#main #head li#all {
+	padding-right: 6px;
+}
+#main #head li#file {
+	background: url(../images/word.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main #head li#mp3 {
+	background: url(../images/mp3.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main #head li#video{
+	background: url(../images/video.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main #head li#other {
+}
+#logo_small {
+	margin-right: 10px;
+	float: left;
+	border: 0;
+}
+#form {
+	line-height: 25px;
+}
+#queryText {
+	width: 300px;
+	font-family: sans-serif;
+	margin-left: 0px;
+	font-size: 18px;
+	height: 25px;
+}
+#spanOutput {
+	width: 300px;
+	margin-left: 105px;
+	font-size: 18px;
+	z-index: 101;
+	background-color: white;
+	border: 1px solid #000000;
+	padding-left: 2px;
+	overflow: visible;
+	display: none;
+	font-family: "ÃÔÄã·±ÆôÌå","Ó×Ô²";
+	text-align:left;
+}
+#search {
+	height: 26px;
+	font-size: 16px;
+	font-family: "ÃÔÄã·±ÆôÌå";
+	margin-right: 10px;
+}
+#head {}
+#head p {
+	margin-left: 20px;
+}
+.fileInfo {
+	width: 450px;
+	float: left;
+	margin-right: 20px;
+}
+.download {
+	float: left;
+	border: red 1px dashed;
+}
+.doc {
+	background: url(../images/preview/word.png) no-repeat 100% 40%;
+}
+.ppt {
+	background: url(../images/preview/powerpoint.png) no-repeat 100% 40%;
+}
+.showPPT {
+	width: 100%;
+	border: double 5px #686;
+}
+.pic {
+	margin: 10px 2px;
+	padding-bottom: 10px;
+	border-bottom: dashed 2px #F77;
+}
+.pic img {
+	width: 90%;
+	margin-left: 5%;
+}
+#body {
+	clear: both;
+	width: 100%;
+}
+#body .textbox {
+	width: 100%;
+	min-height: 600px;
+	resize: none;
+	font-size: 18px;
+	word-wrap: break-word;
+	background: #F6FAE3;
+	border: double 5px #686;
+}
+#foot {
+	clear: both;
+	font-size: 90%;
+	font-style: normal;
+	margin-top: 10px;
+	text-align:center;
+	background-color: #DDD;
+}
+#foot address {
+	font-style: normal
+}
+#player {
+	width: 550px;
+	height: 571px;
+	padding-left: 25px;
+	padding-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/preview/video.png) no-repeat;
+}
+#audioPlayer {
+	width: 450px;
+	height: 576px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background: url(../images/preview/audioPlayer.png) no-repeat;
+}
+#audio {
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+#lrc {
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	float: left;
+}
+#audioTitle p {
+	color: yellow;
+	font-size: 150%;
+	text-align: center;
+}
+#pdf {
+	width: 604px;
+	padding-top: 158px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/preview/aesopLib.png) no-repeat;
+}
+#viewerPlaceHolder {
+	display: block;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 800px;
+}
+#audiolist {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+#audiolist #title {
+	width: 800px;
+	height: 157px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	border-bottom: 5px #AFA double;
+	background: url(../images/preview/aesopMusic.png) no-repeat;
+}
+#audiolist ul {
+	list-style-type: none;
+}
+#audiolist li {
+	display: inline;
+	font-family: "Ó×Ô²";
+}
+#audiolist li#all {
+	padding-right: 6px;
+}
+#audiolist li#file {
+	background: url(../images/word.png) no-repeat right center;
+	padding-right: 17px;
+}
+#audiolist li#mp3 {
+	background: url(../images/mp3.png) no-repeat right center;
+	padding-right: 17px;
+}
+#audiolist li#video{
+	background: url(../images/video.png) no-repeat right center;
+	padding-right: 17px;
+}
+#audiolist li#other {
+}
+#logo_small {
+	margin-right: 10px;
+	float: left;
+	border: 0;
+}
+#audiolist #head {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#wenkuHead {
+	width: 604px;
+	padding-top: 158px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/preview/aesopLib.png) no-repeat;
+}
+.wenkuBlock {
+	width: 100%;
+	min-height: 100px;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-bottom: 4px double red;
+}
+#wenkuBody {
+	border-top: 4px double red;
+	background: #AFA;
+	padding: 10px;
+}
+.wenkuTitle {
+	margin-left: 40px;
+	background: white;
+	display: inline;
+	font-weight: bold;
+	font-size: 120%;
+}
+#wenkuList {
+	border-top: 4px red double;
+	min-height: 350px;
+}
+#wenkuList .title {
+	font-size: 110%;
+	font-weight: bold;
+}
+#wenkuList .info {
+	font-size: 80%;
+	color: #888;
+}
+#wenkuList .des {
+	font-size: 90%;
+}
+#wenkuBody .wenkuBlock ul.articleList {
+	list-style-type: decimal;
+	margin-left: 140px;
+}
+.wenkuArticle {
+	
+}
+.moreWenku {
+	text-align: right;
+}
+table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px #AFA solid;
+}
+th {
+	background: #AFA;
+}
+.name {
+	width: 30%;
+}
+.singer {
+	width: 30%;
+}
+.down {
+	width: 15%;
+}
+.listen {
+	width: 15%;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.even {
+}
+.odd {
+	background-color: #DDD;	
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: green;
+}
+a:active {
+	color: green;
+}
+#pageBar {
+	font-size: 80%;
+}

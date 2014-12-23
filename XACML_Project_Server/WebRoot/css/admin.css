@@ -1,0 +1,49 @@
+/* css style reset */
+* { padding: 0; margin: 0 }
+img { border: 0; }
+a { color: blue; }
+
+/* title */
+#include-div { padding: 10px 10px; overflow-x: hidden; font-size: 13px; margin-bottom: 10px; height: 370px; }
+#include-div h3 { font-size: 15px; background: url(../images/tag.jpg) no-repeat; height: 30px; width: 150px; text-align: center; color: white; line-height: 30px; margin-bottom: 20px; }
+#include-div .content p { text-indent: 2em; }
+
+form { line-height: 22px; }
+#include-div label { width: 100px; display: inline-block; text-align: right; margin-right: 5px; }
+#include-div textarea { width: 450px; height: 60px; resize: none; font-size: 13px; margin-top: -16px;}
+.submitLine { margin-top: 5px; text-align: right; padding-right: 78px; }
+form .button { margin-left: 10px; }
+form .checkbox { width: 100px; text-align: center; }
+form .name { width: 150px; text-align: center; }
+form .employee-list { width: 250px; margin: 20px auto 0 auto; border: 1px solid gray; font-size: 13px; }
+form .employee-list th { background: rgb(180, 180, 180); }
+form .employee-list td { border-top: 1px dashed gray; }
+form .employee-list .checkbox { border-right: 1px dashed gray; }
+form select { width: 150px; }
+.button { background: url(../images/button-bg.jpg); width: 80px; height: 30px; border: 0; color: white; letter-spacing: 3px; text-align: center; }
+.action-list { text-align: right; margin-top: -20px; padding-right: 10px; }
+#train li, #unit li, #bar li, #point li, #lesson li, #noticeList li { background: url(../images/icon-line.png) no-repeat 5px center; padding-left: 30px; }
+#unit li, #bar li, #point li, #lesson li { margin-left: 105px; }
+.action-list a { margin-left: 5px; }
+ul#file-list { list-style: none; margin-left: 20px; }
+ul#file-list li { background: url(../images/icon-line.png) no-repeat 5px center; padding-left: 30px; }
+form.exam-form p.text-info { line-height: 10px !important; height: 10px !important; }
+.step { background: #8fce35; color: white; padding: 3px 10px; }
+.exam-form hr { border-top: 1px dotted gray; margin-bottom: 10px; }
+#handleSelectForm p { margin-left: 20px; margin-top: -17px; }
+.exams-list { margin-left: 20px; }
+.exams-list a { color: blue; }
+.score { color: red; font-size: 30px; font-weight: bold; }
+.auto-text-area p { margin-left: 109px; margin-top: -19px; }
+.person-list { margin-left: 30px; }
+.person-list a { padding-left: 20px; background: url(../images/icon-person.png) no-repeat 2px center; }
+.datetime { color: gray; font-size: 12px;  }
+.origin-attachments { margin-left: 20px; }
+.origin-attachments li { list-style: none; padding-left: 20px; background: url(../images/icon-line.png) no-repeat 0 center; }
+.origin-attachments li.xls, .origin-attachments li.xlsm, .origin-attachments li.xlsx { background: url(../images/xls.png) no-repeat 0 center; }
+.origin-attachments li.pdf { background: url(../images/pdf.png) no-repeat 0 center; }
+.origin-attachments li.doc, .origin-attachments li.docx { background: url(../images/doc.png) no-repeat 0 center; }
+.origin-attachments li.ppt, .origin-attachments li.pptx { background: url(../images/ppt.png) no-repeat 0 center; }
+.origin-attachments li.mp3, .origin-attachments li.wpm { background: url(../images/audio.png) no-repeat 0 center; }
+.origin-attachments li.mp4, .origin-attachments li.rmvb, .origin-attachments li.avi { background: url(../images/video.png) no-repeat 0 center; }
+.origin-attachments li.jar, .origin-attachments li.rar, .origin-attachments li.zip, .origin-attachments li.tar { background: url(../images/rar.png) no-repeat 0 center; }

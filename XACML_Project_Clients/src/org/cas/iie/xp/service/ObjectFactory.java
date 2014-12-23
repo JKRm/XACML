@@ -1,0 +1,79 @@
+
+package org.cas.iie.xp.service;
+
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.bind.annotation.XmlRegistry;
+import javax.xml.namespace.QName;
+
+
+/**
+ * This object contains factory methods for each 
+ * Java content interface and Java element interface 
+ * generated in the org.cas.iie.xp.service package. 
+ * <p>An ObjectFactory allows you to programatically 
+ * construct new instances of the Java representation 
+ * for XML content. The Java representation of XML 
+ * content can consist of schema derived interfaces 
+ * and classes representing the binding of schema 
+ * type definitions, element declarations and model 
+ * groups.  Factory methods for each of these are 
+ * provided in this class.
+ * 
+ */
+@XmlRegistry
+public class ObjectFactory {
+
+    private final static QName _GetXacmlResult_QNAME = new QName("http://service.xp.iie.cas.org/", "getXacmlResult");
+    private final static QName _GetXacmlResultResponse_QNAME = new QName("http://service.xp.iie.cas.org/", "getXacmlResultResponse");
+
+    /**
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.cas.iie.xp.service
+     * 
+     */
+    public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link GetXacmlResult }
+     * 
+     */
+    public GetXacmlResult createGetXacmlResult() {
+        return new GetXacmlResult();
+    }
+
+    /**
+     * Create an instance of {@link GetXacmlResultResponse }
+     * 
+     */
+    public GetXacmlResultResponse createGetXacmlResultResponse() {
+        return new GetXacmlResultResponse();
+    }
+
+    /**
+     * Create an instance of {@link UserInfo }
+     * 
+     */
+    public UserInfo createUserInfo() {
+        return new UserInfo();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetXacmlResult }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://service.xp.iie.cas.org/", name = "getXacmlResult")
+    public JAXBElement<GetXacmlResult> createGetXacmlResult(GetXacmlResult value) {
+        return new JAXBElement<GetXacmlResult>(_GetXacmlResult_QNAME, GetXacmlResult.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetXacmlResultResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://service.xp.iie.cas.org/", name = "getXacmlResultResponse")
+    public JAXBElement<GetXacmlResultResponse> createGetXacmlResultResponse(GetXacmlResultResponse value) {
+        return new JAXBElement<GetXacmlResultResponse>(_GetXacmlResultResponse_QNAME, GetXacmlResultResponse.class, null, value);
+    }
+
+}
